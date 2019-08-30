@@ -1,0 +1,1 @@
+xcodebuild -workspace MiniBuKe.xcworkspace -scheme MiniBuKe -configuration Debug
