@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EnglishDownCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-Ma-RwI">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="119"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_sheet_projection1.png" translatesAutoresizingMaskIntoConstraints="NO" id="PMW-jp-hM2">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="128"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sv5-gP-eQk">
+                        <rect key="frame" x="7" y="0.0" width="2" height="120"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89747431506849318" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="zcV-d2-RHu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXW-JS-sVx">
+                        <rect key="frame" x="2" y="0.0" width="4" height="118"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.095408818493150679" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="d3v-el-BAm"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="儿童读物" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddq-9m-W3j">
+                        <rect key="frame" x="0.0" y="126" width="126" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="AM9-at-EwN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ddq-9m-W3j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0gs-A8-vat"/>
+                <constraint firstItem="Ddq-9m-W3j" firstAttribute="top" secondItem="PMW-jp-hM2" secondAttribute="bottom" constant="-2" id="0h1-dw-QyZ"/>
+                <constraint firstItem="PMW-jp-hM2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1XL-0t-alO"/>
+                <constraint firstAttribute="trailing" secondItem="Xm8-Ma-RwI" secondAttribute="trailing" constant="11" id="6vk-nH-qL6"/>
+                <constraint firstItem="hXW-JS-sVx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AIA-4n-lDV"/>
+                <constraint firstAttribute="trailing" secondItem="PMW-jp-hM2" secondAttribute="trailing" id="Fat-cj-z32"/>
+                <constraint firstAttribute="trailing" secondItem="Ddq-9m-W3j" secondAttribute="trailing" id="Ldi-hz-DHC"/>
+                <constraint firstItem="Ddq-9m-W3j" firstAttribute="top" secondItem="Xm8-Ma-RwI" secondAttribute="bottom" constant="7" id="PLh-MY-GUb"/>
+                <constraint firstItem="hXW-JS-sVx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="SXQ-JN-1dj"/>
+                <constraint firstAttribute="bottom" secondItem="sv5-gP-eQk" secondAttribute="bottom" constant="40" id="WgO-6R-qYT"/>
+                <constraint firstItem="sv5-gP-eQk" firstAttribute="leading" secondItem="hXW-JS-sVx" secondAttribute="trailing" constant="1" id="aKJ-2U-1fU"/>
+                <constraint firstItem="Xm8-Ma-RwI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bnK-Ly-xPN"/>
+                <constraint firstItem="Ddq-9m-W3j" firstAttribute="top" secondItem="hXW-JS-sVx" secondAttribute="bottom" constant="8" id="dMj-HI-8bj"/>
+                <constraint firstAttribute="bottom" secondItem="Ddq-9m-W3j" secondAttribute="bottom" constant="10" id="gVt-JN-CUA"/>
+                <constraint firstItem="Xm8-Ma-RwI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ilX-n4-Z8k"/>
+                <constraint firstItem="sv5-gP-eQk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jEW-40-bcd"/>
+                <constraint firstItem="PMW-jp-hM2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m6a-Ss-lO9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="126" height="160"/>
+            <connections>
+                <outlet property="blackeView" destination="hXW-JS-sVx" id="ZXW-Ej-bTI"/>
+                <outlet property="heightLview" destination="sv5-gP-eQk" id="JR2-7C-5RF"/>
+                <outlet property="imageview" destination="Xm8-Ma-RwI" id="AXg-Pd-NGX"/>
+                <outlet property="label" destination="Ddq-9m-W3j" id="wy2-gS-euP"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="2"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book_sheet_projection1.png" width="240" height="312"/>
+    </resources>
+</document>

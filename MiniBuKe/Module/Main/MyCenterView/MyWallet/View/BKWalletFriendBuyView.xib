@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BKWalletFriendBuyView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wk-5x-jf9">
+                    <rect key="frame" x="15" y="20" width="345" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC7-G0-W99">
+                            <rect key="frame" x="0.0" y="10" width="345" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0个好友注册，0次成功推荐购买" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S4-sL-rIV">
+                            <rect key="frame" x="0.0" y="31" width="345" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.95686274509803915" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pC7-G0-W99" firstAttribute="top" secondItem="6wk-5x-jf9" secondAttribute="top" constant="10" id="40z-8e-Q0x"/>
+                        <constraint firstAttribute="trailing" secondItem="pC7-G0-W99" secondAttribute="trailing" id="6dB-YG-Flv"/>
+                        <constraint firstItem="8S4-sL-rIV" firstAttribute="leading" secondItem="6wk-5x-jf9" secondAttribute="leading" id="8ph-KZ-bKr"/>
+                        <constraint firstItem="8S4-sL-rIV" firstAttribute="top" secondItem="pC7-G0-W99" secondAttribute="bottom" constant="5" id="LBH-K8-p7A"/>
+                        <constraint firstItem="pC7-G0-W99" firstAttribute="leading" secondItem="6wk-5x-jf9" secondAttribute="leading" id="hIR-Zy-GBt"/>
+                        <constraint firstAttribute="trailing" secondItem="8S4-sL-rIV" secondAttribute="trailing" id="r41-Hd-B9n"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_small_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="RQ6-kY-sRS">
+                    <rect key="frame" x="26" y="11" width="12" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="ITI-zf-IQp"/>
+                        <constraint firstAttribute="height" constant="9" id="u6g-WC-T5i"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6wk-5x-jf9" firstAttribute="top" secondItem="RQ6-kY-sRS" secondAttribute="bottom" id="0uo-a7-Qp0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6wk-5x-jf9" secondAttribute="bottom" constant="20" id="2m2-B7-sI1"/>
+                <constraint firstItem="6wk-5x-jf9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="arA-89-FUI"/>
+                <constraint firstItem="6wk-5x-jf9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="pVq-Cr-W1d"/>
+                <constraint firstItem="6wk-5x-jf9" firstAttribute="leading" secondItem="RQ6-kY-sRS" secondAttribute="leading" constant="-11" id="qiV-lW-GQ0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6wk-5x-jf9" secondAttribute="trailing" constant="15" id="wrT-ea-VNo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="botomView" destination="6wk-5x-jf9" id="9bK-gr-AKj"/>
+                <outlet property="showLabel" destination="8S4-sL-rIV" id="EgV-FK-dWb"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="129.53523238380811"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wallet_small_arrow_icon" width="12" height="9"/>
+    </resources>
+</document>
