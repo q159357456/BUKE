@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BKWeChartUseTipView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bindwechart_use_icon" translatesAutoresizingMaskIntoConstraints="NO" id="loG-7m-jSE">
+                    <rect key="frame" x="117.5" y="25" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="kyD-2d-UeV"/>
+                        <constraint firstAttribute="width" constant="65" id="naP-lO-mfN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该微信绑定过账号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEQ-y3-Gxk">
+                    <rect key="frame" x="10" y="114" width="280" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-3g-BLZ">
+                    <rect key="frame" x="0.0" y="203" width="300" height="45"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="BIz-iO-Ocl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="pva-dY-Hdh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZW-x7-eFV">
+                    <rect key="frame" x="10" y="146" width="280" height="31.5"/>
+                    <string key="text">该账号已关联账户资产，为保障您的权益，
+请先登录原手机号解绑。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NZW-x7-eFV" firstAttribute="top" secondItem="rEQ-y3-Gxk" secondAttribute="bottom" constant="15" id="6nW-4q-N9W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fhY-3g-BLZ" secondAttribute="bottom" id="6os-PP-Hob"/>
+                <constraint firstItem="NZW-x7-eFV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="8Ex-ug-uSm"/>
+                <constraint firstItem="rEQ-y3-Gxk" firstAttribute="top" secondItem="loG-7m-jSE" secondAttribute="bottom" constant="24" id="9eP-RW-rH9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rEQ-y3-Gxk" secondAttribute="trailing" constant="10" id="Fiq-Q1-Jco"/>
+                <constraint firstItem="loG-7m-jSE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="L0N-Wt-kIE"/>
+                <constraint firstItem="rEQ-y3-Gxk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="WMw-7i-FC3"/>
+                <constraint firstItem="loG-7m-jSE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="byQ-Lu-iR6"/>
+                <constraint firstItem="fhY-3g-BLZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iGc-J3-yMC"/>
+                <constraint firstAttribute="trailing" secondItem="NZW-x7-eFV" secondAttribute="trailing" constant="10" id="vcD-Dp-nz0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fhY-3g-BLZ" secondAttribute="trailing" id="yw1-Nc-v29"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLable" destination="rEQ-y3-Gxk" id="hWW-JP-bNK"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="bindwechart_use_icon" width="65" height="65"/>
+    </resources>
+</document>

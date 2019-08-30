@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BKuploadTipView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="270"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U8K-zF-V9G">
+                    <rect key="frame" x="99" y="25" width="102" height="102"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="102" id="fLJ-ch-VCR"/>
+                        <constraint firstAttribute="height" constant="102" id="sJf-Z5-Q24"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awU-y8-zwO">
+                    <rect key="frame" x="113" y="152" width="74" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检查你的网络是否通畅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHV-f9-V1p">
+                    <rect key="frame" x="83.5" y="188" width="133" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jl-S8-VOJ">
+                    <rect key="frame" x="0.0" y="225" width="150" height="45"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="j2y-zy-ho2"/>
+                        <constraint firstAttribute="height" constant="45" id="tyf-cg-frW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="返回首页">
+                        <color key="titleColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leftBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="5bn-t3-cHH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgb-Cy-bir">
+                    <rect key="frame" x="151" y="225" width="149" height="45"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="UKm-5b-yvH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="重新上传">
+                        <color key="titleColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tlU-da-5Ha"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="awU-y8-zwO" firstAttribute="top" secondItem="U8K-zF-V9G" secondAttribute="bottom" constant="25" id="4Xg-ER-ZBv"/>
+                <constraint firstItem="Cgb-Cy-bir" firstAttribute="leading" secondItem="3Jl-S8-VOJ" secondAttribute="trailing" constant="1" id="7WP-fM-HFJ"/>
+                <constraint firstItem="HHV-f9-V1p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Eun-QC-cqw"/>
+                <constraint firstItem="U8K-zF-V9G" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="GfX-b7-qab"/>
+                <constraint firstItem="3Jl-S8-VOJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PFi-UG-RT3"/>
+                <constraint firstItem="Cgb-Cy-bir" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Qgb-Eq-FSG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3Jl-S8-VOJ" secondAttribute="bottom" id="VDD-Ya-dI5"/>
+                <constraint firstItem="awU-y8-zwO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bPd-Cs-wD0"/>
+                <constraint firstItem="U8K-zF-V9G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dsy-79-aIS"/>
+                <constraint firstItem="Cgb-Cy-bir" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hCk-LP-koS"/>
+                <constraint firstItem="HHV-f9-V1p" firstAttribute="top" secondItem="awU-y8-zwO" secondAttribute="bottom" constant="14" id="zze-uN-B0G"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="desLabel" destination="HHV-f9-V1p" id="jdi-di-t0s"/>
+                <outlet property="iconImageView" destination="U8K-zF-V9G" id="5YT-RX-0yP"/>
+                <outlet property="leftBtn" destination="3Jl-S8-VOJ" id="CMD-mZ-kVF"/>
+                <outlet property="rightBtn" destination="Cgb-Cy-bir" id="gYM-mw-SXR"/>
+                <outlet property="titleLabel" destination="awU-y8-zwO" id="rQL-pq-g96"/>
+            </connections>
+            <point key="canvasLocation" x="505.60000000000002" y="78.260869565217391"/>
+        </view>
+    </objects>
+</document>

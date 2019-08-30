@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BKHomeBookCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheet10.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-Lw-jJz">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4Ca-Lw-jJz" secondAttribute="height" multiplier="1:1" id="vId-cf-Gfo"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_kidbook_c.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qqo-Pr-3PD">
+                        <rect key="frame" x="5" y="5" width="95" height="95"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_reading_NO1" translatesAutoresizingMaskIntoConstraints="NO" id="ax4-aY-fUb">
+                        <rect key="frame" x="14" y="5" width="31" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="hPR-WT-h5i"/>
+                            <constraint firstAttribute="width" constant="31" id="t7t-Ot-OkY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms4-Ml-YgT">
+                        <rect key="frame" x="5" y="115" width="95" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4Ca-Lw-jJz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="39Z-oH-fKI"/>
+                <constraint firstItem="ax4-aY-fUb" firstAttribute="leading" secondItem="Qqo-Pr-3PD" secondAttribute="leading" constant="9" id="3bV-s2-5Yl"/>
+                <constraint firstItem="ms4-Ml-YgT" firstAttribute="trailing" secondItem="Qqo-Pr-3PD" secondAttribute="trailing" id="Aaf-ew-nt3"/>
+                <constraint firstAttribute="trailing" secondItem="4Ca-Lw-jJz" secondAttribute="trailing" id="F32-3b-Cvp"/>
+                <constraint firstItem="Qqo-Pr-3PD" firstAttribute="leading" secondItem="4Ca-Lw-jJz" secondAttribute="leading" constant="5" id="ISq-Di-qG6"/>
+                <constraint firstItem="Qqo-Pr-3PD" firstAttribute="top" secondItem="4Ca-Lw-jJz" secondAttribute="top" constant="5" id="JtD-vP-rDp"/>
+                <constraint firstItem="4Ca-Lw-jJz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VQD-Wu-3Qj"/>
+                <constraint firstItem="Qqo-Pr-3PD" firstAttribute="trailing" secondItem="4Ca-Lw-jJz" secondAttribute="trailing" constant="-5" id="Vok-RR-MDp"/>
+                <constraint firstItem="ax4-aY-fUb" firstAttribute="top" secondItem="Qqo-Pr-3PD" secondAttribute="top" id="bEm-4k-ejw"/>
+                <constraint firstItem="Qqo-Pr-3PD" firstAttribute="bottom" secondItem="4Ca-Lw-jJz" secondAttribute="bottom" constant="-5" id="gzi-Ta-7dL"/>
+                <constraint firstItem="ms4-Ml-YgT" firstAttribute="leading" secondItem="Qqo-Pr-3PD" secondAttribute="leading" id="mDq-g8-bjD"/>
+                <constraint firstItem="ms4-Ml-YgT" firstAttribute="top" secondItem="4Ca-Lw-jJz" secondAttribute="bottom" constant="10" id="uIs-kR-156"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="227" height="225"/>
+            <connections>
+                <outlet property="NumberImage" destination="ax4-aY-fUb" id="97T-Ud-37B"/>
+                <outlet property="bookName" destination="ms4-Ml-YgT" id="MlD-kU-YY4"/>
+                <outlet property="corverImage" destination="Qqo-Pr-3PD" id="FlV-e2-jMr"/>
+            </connections>
+            <point key="canvasLocation" x="77.599999999999994" y="117.39130434782609"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_reading_NO1" width="31" height="35"/>
+        <image name="place_kidbook_c.png" width="100" height="100"/>
+        <image name="sheet10.png" width="114" height="114"/>
+    </resources>
+</document>
